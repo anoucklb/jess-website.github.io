@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KMDT Application Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="title">KMDT Application Form</h1>
+    <p id="description"><em>Thank you for taking the time to apply. We will get back to you shortly.</em></p>
+      <form id="survey-form">
+        <fieldset>
+          <h2>Enter your details here:</h2>
+          <label id="name-label">
+            Name: <input id="name" type="text" required placeholder="John Doe"></input>
+          </label>
+          <label id="email-label">
+            Email: <input id="email" type="email" placeholder="example@example.com" required></input>
+          </label>
+          <label id="number-label">
+            Age: <input id="number" type="number" min="18" max="120" placeholder="eg. 25"></input>
+          </label>
+          <label id="tel-label">
+          Tel.: <input id="tel" type="tel" min="0" max="9" placeholder="+44 1234 567 890"></input>
+          </label>
+          <label>Select your gender:
+            <label for="female"><input id="female" type="radio" name="gender" value="1" class="inline">Female</input></label>
+            <label for="male"><input id="male" type="radio" name="gender" value="2" class="inline">Male</input></label>
+            <label for="non-binary"><input id="non-binary" type="radio" name="gender" value="3" class="inline">Non-binary</input></label>
+            <label for="other"><input id="other" type="radio" name="gender" value="4" class="inline">Other</input></label>
+          </label>
+        </fieldset>
+        <fieldset>
+          <h2>Application role:</h2>
+          <label>
+            Which role are you applying for? <select id="dropdown">
+              <option>Select role</option>
+              <option>Dancer</option>
+              <option>Assistant Choreographer</option>
+              <option>Musician</option>
+              <option>Technician</option>
+            </select>
+          </label>
+          <label for="CV">Upload your CV: <input id="cv" type="file" name="file" /></label>
+          <label for="Showreel">Upload your Showreel: <input id="showreel" type="file" name="file" /></label>
+          <label class="availability">Select your availability:</label>
+            <label for="availibility-1"><input id="availibility-1" type="checkbox" value="1"class="inline">11/06/23 - 23/06/23</input></label>
+            <label for="availibility-2"><input id="availibility-2" type="checkbox" value="2" class="inline">26/06/23 - 15/07/23</input></label>
+            <label for="availibility-3"><input id="availibility-3" type="checkbox" value="3" class="inline">17/07/23 - 31/07/23</input></label>
+        </fieldset>
+        <fieldset>
+          <h2>Additional comments:</h2>
+          <textarea id="comments" rows="10" cols="50" Placeholder="I'd like to apply for this role because..."></textarea>
+        </fieldset>
+          <input type="Submit" id="submit"></submit>
+      </form>
+  </body>
+  <footer>
+      <p><em>~ Kennedy Muntanga Dance Theatre ~</em></p>
+  </footer>
+</html>
